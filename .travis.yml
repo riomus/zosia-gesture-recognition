@@ -1,6 +1,6 @@
 env:
   global:
-    secure: Douz/Y5L8iu2/ni2OxMRYtHvqlahxoxlnPCIHeyeSIPSGaqW1JKrRGVQQhieDyuA+jtH+p9V2kK5zM3Kg0j2VSXADYIMx4O4ziZZ5+eJ//70hQ9Y0wumeT6/Idbeotg+z3xDLauQxyEuoW72nu+jtdmOlkw7XBWhKckfxs2U/qE=
+    secure: UU6fpJzerciJ9nw5fvmsJpPSGWESQK0DRgA73RMIoIkPF0DUpwmGm4h8a42n5xMnl7jopMqVxf4OD4HKvobdzAUvgq5C09K3ASlhb+qBNN3ieRuOl9khaVBtDtaYI4SBvUTOPZuo7E7Bg/OxI7X1Hu/h5b6+NpoLHbwn2wl1VW0=
 language: bash
 script:
-  - 'sh ./deploy_to_gh-pages.sh'
+- sh ./deploy_to_gh-pages.sh
