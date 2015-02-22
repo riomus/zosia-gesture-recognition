@@ -1,6 +1,5 @@
 #!/bin/bash
-git pull origin gh-pages
-git branch -D gh-pages
+git push origin --delete gh-pages
 git checkout -b gh-pages
 
 git add **
