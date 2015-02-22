@@ -5,6 +5,5 @@ language: bash
 script:
  - 'git config --global user.email "riomus@gmail.com"'
  - 'git config --global user.name "Travis-CI"'
- - 'git config credential.helper "store --file=.git/credentials"'
- - 'echo "https://${GH_TOKEN}:@github.com" > .git/credentials'
+ - 'git remote set-url origin https://${GH_TOKEN}@github.com/riomus/zosia-gesture-recognition.git'
  - sh ./deploy_to_gh-pages.sh
