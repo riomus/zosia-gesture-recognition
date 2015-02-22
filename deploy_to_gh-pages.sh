@@ -1,4 +1,5 @@
 #!/bin/bash
+git remote set-url origin https://github.com/riomus/zosia-gesture-recognition.git
 git push --force origin :gh-pages 
 git checkout -b gh-pages
 git add **
