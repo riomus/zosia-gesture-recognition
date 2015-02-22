@@ -1,5 +1,5 @@
 #!/bin/bash
-git push --force --delete gh-pages 
+git push --force origin :gh-pages 
 git checkout -b gh-pages
 
 git add **
