@@ -51,10 +51,33 @@
 				<section>
 					<h2>How?</h2>
 					<ol>
+						<li>Capture data from webcam</li>
 						<li>Motion detection</li>
 						<li>Motion discretization</li>
 						<li>Gesture recognition</li>
 					</ol>
+				</section>
+				<section>
+					<h2>Capture data from webcam: Tracking.js</h2>
+					<h3><em>Don't reinvent the wheel</em></h3>
+				<ul>
+					<li>
+						<p>OpenSource library</p>
+					</li>
+					<li>
+						<p>
+							Uses userMedia to process webcam data
+						</p>
+					</li>
+					<li>
+						<p>
+							Provides friendly API
+						</p>
+					</li>
+				</ul>
+				<p>
+					<img src="img/tracking.png">
+				</p>
 				</section>
 				<section>
 					<h2>Motion detection: Optcal Flow Horn-Schunck</h2>
@@ -64,7 +87,9 @@
 							<p>Assumptions</p>
 							<ol>
 								<li>
-									<p>Pixel color (brightnes) do not change during movement</p>
+									<p>
+										Pixel color (brightnes) do not change during movement
+									</p>
 								</li>
 								<li>
 									Movement of neigbour pixels is similar
@@ -94,10 +119,53 @@
 							Discretize angle using 'compass rose'
 						</li>
 					</ol>
+					<p>
+						<img src="img/compass.png" style="height:40%;width:40%;">
+					</p>
+				</section>
+				<section data-background-color="#fff" style="color:#000">
+					<h2 style="color:#000">
+						Gesture recognition: HMM
+					</h2>
+					<p>
+						Hidden Markov Models
+					</p>
+					<p>
+						<img src="img/hmm1.png" style="height:50%;width:50%;">
+					</p>
+					<ul>
+						<li>hidden - we don't know anything about inner representation</li>
+					</ul>
 				</section>
 				<section>
 					<h2>Gesture recognition: HMM</h2>
-					<p>Hidden Markov Models</p>
+					<ul>
+						<li>
+							<p>Connections betwean states and observations can be represented as matrices</p>
+						</li>
+						<li>
+							<p>Rows and columns represents <em>from</em> and <em>to</em> of connection</p>
+						</li>
+						<li>
+							<p>Value is a probability of transition or emmision</p>
+						</li>
+						<li>Connections betwean states and observations can me modified</li>
+						<li>Tested with <em>all to all</em> and <em>serial</em> connection models
+							<ul>
+								<li><em>all to all</em> requires more data samples</li>
+							</ul>
+						</li>
+						<li>
+							<p>Viterbi alghoritm to teach and calculate path</p>
+						</li>
+					</ul>
+				</section>
+				<section data-background-color="#fff" style="color:#000">
+					<h2 style="color:#000">Gesture recognition: HMM</h2>
+					<p>
+						<img src="img/hmm2.jpeg" style="height:50%;width:50%;">
+						<img src="img/hmm3.jpeg" style="height:50%;width:50%;">
+					</p>
 				</section>
 				<section>
 					<h2>Samples</h2>
@@ -109,39 +177,39 @@
 						</li>
 						<li>
 							<a href="https://riomus.github.com/phaser-gesture" target="_blank">
-							Game
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Github pages</h2>
-				<ul>
-					<li>
-						<a href="https://github.com/riomus">My page</a>
-					</li>
-					<li>
-						<a href="https://github.com/riomus/HMM.js">HMM.js</a>
-					</li>
-					<li>
-						<a href="https://github.com/riomus/OpticalFlow.js">OpticalFlow.js</a>
-					</li>
-					<li>
-						<a href="https://github.com/riomus/GestureRecognition">Gesture Recognition</a>
-					</li>
-					<li>
-						<a href="https://github.com/riomus/phaser-gesture">Game</a>
-					</li>
-				</ul>
-			</section>
+								Game
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Github pages</h2>
+					<ul>
+						<li>
+							<a href="https://github.com/riomus">My page</a>
+						</li>
+						<li>
+							<a href="https://github.com/riomus/HMM.js">HMM.js</a>
+						</li>
+						<li>
+							<a href="https://github.com/riomus/OpticalFlow.js">OpticalFlow.js</a>
+						</li>
+						<li>
+							<a href="https://github.com/riomus/GestureRecognition">Gesture Recognition</a>
+						</li>
+						<li>
+							<a href="https://github.com/riomus/phaser-gesture">Game</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+
 		</div>
 
-	</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.min.js"></script>
-
-	<script>
+		<script>
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
